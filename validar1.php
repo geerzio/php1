@@ -32,20 +32,21 @@ if (isset($_POST['submit'])) {
         }
         //echo "<p class='error'> * Dato correcto </p>";
     }
+
     //if (($tel) && ($nombre) && ($email)) {
     //(include("../php_IFTS4/gracias.html"));
     //}
     //if (($telOK > 0) && ($nombreOK > 0) && ($emailOK > 0)) {
     //include("../php_IFTS4/gracias.html"); //}
 }
-if (isset($_POST['submit']) && (is_numeric($tel)) && ($nombre) && ($email)) {
+if (isset($_POST['submit']) && (is_numeric($tel)) && ($tel < 8) && ($nombre) && ($email)) {
     (include("../php_IFTS4/gracias.html"));
 }
 
 //if (($tel > 0) && ($nombre > 0) && ($email > 0)) {
 //  (include("../php_IFTS4/gracias.html"));
 //}
-
+//&& (is_numeric($tel)) && ($tel < 8) && ($nombre) && ($email))
 
 
 //else {

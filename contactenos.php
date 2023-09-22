@@ -30,22 +30,22 @@ if (isset($_POST['submit'])) {
         <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">
           <p>
             <label for=""> Nombre </label>
-            <input type="text" name="name" id="fullname" value="<?php if (isset($nombre))
+            <input type="text" name="name" id="fullname" required value="<?php if (isset($nombre))
               echo $nombre ?>" />
             </p>
             <p>
               <label for="">Email</label>
-              <input type="email" name="email" value="<?php if (isset($email))
+              <input type="email" name="email" required value="<?php if (isset($email))
               echo $email ?>" />
             </p>
             <p>
               <label for="">Telefono</label>
-              <input type="tel" name="telefono" value="<?php if (isset($tel))
+              <input type="tel" name="telefono" required value="<?php if (isset($tel))
               echo $tel ?>" />
             </p>
             <p class="block">
               <label for="">Mensaje</label>
-              <textarea name="mensaje" id="" rows="3"></textarea>
+              <textarea name="mensaje" id="" rows="3" required></textarea>
             </p>
             <p class="block">
               <button type="submit" name="submit">Send</button>

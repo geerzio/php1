@@ -34,7 +34,6 @@ body{
 .contact-form{
     background:#00bfff76;
 }
-
 .contact-form form p {
     margin: 0;
     padding: 1em;
@@ -139,7 +138,7 @@ body{
         text-align: left;
     }
 }
-.h1{
+.h3{
     text-align: center;
     color: rgba(19, 228, 19, 0.669);
     font-size: 40px;
@@ -147,9 +146,31 @@ body{
     margin-top: 20px;
 }
 
-.volver_menu{
+.volver{
     text-align: center;
-    font-size: 40px;
-    background: rgb(0,0, 0,0.4);
-    margin-top: 20px;
+    justify-content: center;
+}
+
+
+
+.cargar{
+    text-align: center;
+    font-size: 20px;
+    /*background: rgb(0,0, 0,0.4);*/
+    margin-bottom: 40px;
+    color: black;
+}
+
+.cargar-div{
+    margin-bottom: 40px;
+    background-color: rgb(49, 132, 235);
+}
+
+.cargar:hover{
+    color: white;
+}
+.dialogo{
+    text-align: center;
+    justify-content: center;
+    width: 70%;
 }
