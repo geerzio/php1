@@ -51,9 +51,9 @@ if (isset($_POST['submit'])) {
               <button type="submit" name="submit">Send</button>
             </p>
             <?php
-            include("validar-form.php");
-            //include("gracias.html");
-            
+            //include("validar-form.php");
+            include("validar1.php");
+
             ?>
         </form>
       </div>
